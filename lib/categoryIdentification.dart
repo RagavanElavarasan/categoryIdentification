@@ -38,7 +38,7 @@ class _CategoryIdentificationState extends State<CategoryIdentification> {
     try {
       // API request
       final response = await http.post(
-        Uri.parse('http://localhost:7000/search/category'),
+        Uri.parse('http://10.0.2.2:7000/search/category'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'app_name': appName,
